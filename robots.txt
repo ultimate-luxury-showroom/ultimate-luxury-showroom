@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/sitemap.xml
