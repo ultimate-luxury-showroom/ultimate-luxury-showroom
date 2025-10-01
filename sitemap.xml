@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-      <loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/</loc>
-      <lastmod>2025-10-01</lastmod>
-      <changefreq>monthly</changefreq>
-      <priority>1.0</priority>
-   </url>
-   <!-- Add more pages if you have them -->
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/</loc>
+    <lastmod>2025-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 30 Cars Pages -->
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car1</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car2</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car3</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car4</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car5</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car6</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car7</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car8</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car9</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car10</loc><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car11</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car12</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car13</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car14</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car15</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car16</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car17</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car18</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car19</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car20</loc><changefreq>monthly</changefreq></url>
+
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car21</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car22</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car23</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car24</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car25</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car26</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car27</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car28</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car29</loc><changefreq>monthly</changefreq></url>
+  <url><loc>https://ultimate-luxury-showroom.github.io/ultimate-luxury-showroom/#car30</loc><changefreq>monthly</changefreq></url>
+
 </urlset>
