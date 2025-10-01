@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ultimate Luxury Supercar Showroom</title>
+  <meta name="description" content="Luxury Supercar Showroom — curated by Er. Ayush Sir. 30 top luxury marques, cinematic hero video, ambient engine audio." />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter, "Open Sans", Arial, sans-serif;background:#000;color:#fff;overflow-x:hidden}
+    header{position:fixed;top:0;left:0;width:100%;z-index:130;background:rgba(0,0,0,0.65);backdrop-filter: blur(6px);padding:12px 24px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-family:"Cinzel",serif;color:gold;font-size:20px;letter-spacing:1px}
+    nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+    nav a{color:#fff;text-decoration:none;padding:6px 8px;border-radius:8px;font-weight:600;font-size:13px;opacity:0.95}
+    nav a:hover{color:gold;background:rgba(255,215,0,0.03)}
+    .hero{position:relative;height:86vh;min-height:520px;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+    .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(32%);z-index:0}
+    .hero-inner{position:relative;z-index:5;padding:0 20px}
+    .hero h1{font-family:"Cinzel",serif;font-size:52px;color:gold;margin-bottom:8px;text-align:center}
+    .hero p{color:#ddd;font-size:18px;max-width:980px;margin:0 auto;text-align:center}
+    main{margin-top:12px}
+    section{padding:72px 18px;max-width:1100px;margin:0 auto;text-align:center}
+    section h2{font-family:"Cinzel",serif;color:gold;font-size:32px;margin-bottom:8px;text-align:center}
+    hr.sep{border:0;height:3px;width:90px;margin:10px auto 20px;background:linear-gradient(90deg,#b58700,#ffd54a)}
+    .visit{display:inline-block;color:gold;text-decoration:none;font-weight:600;margin-bottom:16px}
+    .car{background:rgba(255,255,255,0.03);padding:20px;border-radius:12px;box-shadow:0 10px 40px rgba(255,215,0,0.06);transition:transform .35s}
+    .car img{width:100%;height:auto;border-radius:10px;display:block;transition:transform .45s,box-shadow .45s}
+    .car:hover img{transform:scale(1.03);box-shadow:0 18px 60px rgba(255,215,0,0.12)}
+    .audio-control{position:fixed;right:18px;bottom:18px;z-index:200;background:rgba(0,0,0,0.6);padding:10px 14px;border-radius:999px;color:gold;font-weight:700;display:flex;gap:10px;align-items:center}
+    .audio-control input{width:120px}
+    footer{padding:30px 18px;text-align:center;color:#9a9a9a;background:#060606;margin-top:30px}
+    @media(max-width:920px){.hero h1{font-size:36px}.brand{font-size:18px}nav a{font-size:12px;padding:5px 6px}}
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <div class="hero">
+    <video autoplay muted loop playsinline poster="https://cdn.pixabay.com/photo/2016/11/29/03/53/car-1868459_1280.jpg">
+      <source src="https://cdn.pixabay.com/video/2023/06/08/168169-836244070_large.mp4" type="video/mp4">
+    </video>
+
+    <header>
+      <div class="brand">Ultimate Luxury Showroom</div>
+      <nav>
+        <!-- first 15 (your images) -->
+        <a href="#rolls">Rolls-Royce</a>
+        <a href="#bugatti">Bugatti</a>
+        <a href="#range">Range Rover</a>
+        <a href="#lamborghini">Lamborghini</a>
+        <a href="#toyota">Toyota</a>
+        <a href="#mahindra">Mahindra</a>
+        <a href="#bmw">BMW</a>
+        <a href="#mercedes">Mercedes</a>
+        <a href="#ferrari">Ferrari</a>
+        <a href="#porsche">Porsche</a>
+        <a href="#mclaren">McLaren</a>
+        <a href="#aston">Aston Martin</a>
+        <a href="#bentley">Bentley</a>
+        <a href="#koenigsegg">Koenigsegg</a>
+        <a href="#pagani">Pagani</a>
+        <!-- extra 15 -->
+        <a href="#audi">Audi</a>
+        <a href="#lexus">Lexus</a>
+        <a href="#maserati">Maserati</a>
+        <a href="#jaguar">Jaguar</a>
+        <a href="#cadillac">Cadillac</a>
+        <a href="#genesis">Genesis</a>
+        <a href="#infiniti">Infiniti</a>
+        <a href="#alfaromeo">Alfa Romeo</a>
+        <a href="#lucid">Lucid</a>
+        <a href="#rivian">Rivian</a>
+        <a href="#tesla">Tesla</a>
+        <a href="#polestar">Polestar</a>
+        <a href="#volvo">Volvo</a>
+        <a href="#acura">Acura</a>
+        <a href="#maybach">Maybach</a>
+      </nav>
+    </header>
+
+    <div class="hero-inner" data-aos="fade-up">
+      <h1>Welcome to the World of Luxury</h1>
+      <p>Experience speed, elegance, and power from the world’s finest vehicles.</p>
+    </div>
+  </div>
+
+  <!-- AUDIO (click to enable due to autoplay policies) -->
+  <audio id="bgAudio" loop preload="none">
+    <source src="https://cdn.pixabay.com/download/audio/2021/09/06/audio_8322a0f12d.mp3?filename=luxury-car-engine-ambient-10652.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="audio-control" id="audioControl" title="Play / Pause ambient sound">
+    <span id="audioIcon">🔊</span>
+    <input id="volume" type="range" min="0" max="1" step="0.01" value="0.5" aria-label="volume">
+  </div>
+
+  <main>
+    <!-- ========== FIRST 15 (images you provided) ========== -->
+
+    <!-- 1 Rolls-Royce -->
+    <section id="rolls" data-aos="fade-up">
+      <h2>Rolls-Royce</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.rolls-roycemotorcars.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car">
+        <img loading="lazy" src="https://www.topgear.com/sites/default/files/images/inline-galleries/2024/04/b3e01ef165708daf63d3c7a97a40e31a/PhantomExtendedMagnetism(2)_1.jpg" alt="Rolls-Royce">
+      </div>
+    </section>
+
+    <!-- 2 Bugatti -->
+    <section id="bugatti" data-aos="fade-up">
+      <h2>Bugatti</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.bugatti.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car">
+        <img loading="lazy" src="https://img1.bonhams.com/image?src=Images/live/2023-04/28/25337441-1-1.jpg&top=0.06&left=0.093&right=0.93" alt="Bugatti">
+      </div>
+    </section>
+
+    <!-- 3 Range Rover -->
+    <section id="range" data-aos="fade-up">
+      <h2>Range Rover</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.rangerover.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car">
+        <img loading="lazy" src="https://static.businessworld.in/Image%202_20241223001620_original_image_29.webp" alt="Range Rover">
+      </div>
+    </section>
+
+    <!-- 4 Lamborghini -->
+    <section id="lamborghini" data-aos="fade-up">
+      <h2>Lamborghini</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.lamborghini.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car">
+        <img loading="lazy" src="https://www.supercars.net/blog/wp-content/uploads/2024/10/2025-Lamborghini-Temerario-005-2160-scaled-1-2048x1152.jpg" alt="Lamborghini">
+      </div>
+    </section>
+
+    <!-- 5 Toyota -->
+    <section id="toyota" data-aos="fade-up">
+      <h2>Toyota</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.toyotabharat.com/showroom/fortuner/index-legender.html" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car">
+        <img loading="lazy" src="https://wallpapercave.com/wp/wp9194406.jpg" alt="Toyota Fortuner">
+      </div>
+    </section>
+
+    <!-- 6 Mahindra -->
+    <section id="mahindra" data-aos="fade-up">
+      <h2>Mahindra</h2>
+      <hr class="sep">
+      <a class="visit" href="https://auto.mahindra.com/suv/scorpio-n/SCN.html" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car">
+        <img loading="lazy" src="https://media.zigcdn.com/media/model/2025/Aug/model-extimg-599167957_930x620.jpg" alt="Mahindra Scorpio-N">
+      </div>
+    </section>
+
+    <!-- 7 BMW -->
+    <section id="bmw" data-aos="fade-up">
+      <h2>BMW</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.bmw.in" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car">
+        <img loading="lazy" src="https://www.topgear.com/sites/default/files/2023/08/P90492179_highRes_bmw-i7-xdrive60-m-sp%20%281%29.jpg" alt="BMW">
+      </div>
+    </section>
+
+    <!-- 8 Mercedes -->
+    <section id="mercedes" data-aos="fade-up">
+      <h2>Mercedes</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.mercedes-benz.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car">
+        <img loading="lazy" src="https://www.mercedes-amg.com/media/images/05b2a2e192c2557dfa3cdec92dfbadb311d6fcc2-1920x1080.jpg?auto=format&fit=max&q=75&w=1920" alt="Mercedes">
+      </div>
+    </section>
+<!-- 9 Ferrari -->
+<section id="ferrari" data-aos="fade-up">
+  <h2>Ferrari</h2>
+  <hr class="sep">
+  <a class="visit" href="https://www.ferrari.com" target="_blank">Visit Official Site</a>
+  <div class="car">
+    <img src="https://static.toiimg.com/thumb/msid-101383893,width-1280,height-720,resizemode-4/101383893.jpg" alt="Ferrari SF90">
+  </div>
+</section>
+
+<!-- 10 Porsche -->
+<section id="porsche" data-aos="fade-up">
+  <h2>Porsche</h2>
+  <hr class="sep">
+  <a class="visit" href="https://www.porsche.com" target="_blank">Visit Official Site</a>
+  <div class="car">
+    <img src="https://www.koenigseggwashingtondc.com/imagetag/3530/main/l/Used-2023-Porsche-911-Turbo-S-1693420736.jpg" alt="Porsche 911">
+  </div>
+</section>
+
+<!-- 11 McLaren -->
+<section id="mclaren" data-aos="fade-up">
+  <h2>McLaren</h2>
+  <hr class="sep">
+  <a class="visit" href="https://cars.mclaren.com" target="_blank">Visit Official Site</a>
+  <div class="car">
+    <img src="https://www.mclarennorthjersey.com/imagetag/729/3/l/New-2025-McLaren-Artura-Spider-Performance-1739467706.jpg" alt="McLaren">
+  </div>
+</section>
+
+<!-- 12 Aston Martin -->
+<section id="aston" data-aos="fade-up">
+  <h2>Aston Martin</h2>
+  <hr class="sep">
+  <a class="visit" href="https://www.astonmartin.com" target="_blank">Visit Official Site</a>
+  <div class="car">
+    <img src="https://images.hindustantimes.com/auto/img/2025/05/30/1600x900/Aston_Martin_DB12_Volante_Palm_Beach_Edition_1748627619114_1748627619385.jpg" alt="Aston Martin">
+  </div>
+</section>
+
+<!-- 13 Bentley -->
+<section id="bentley" data-aos="fade-up">
+  <h2>Bentley</h2>
+  <hr class="sep">
+  <a class="visit" href="https://www.bentleymotors.com" target="_blank">Visit Official Site</a>
+  <div class="car">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/2025-bentley-continental-gt-106-677bfe089384c.jpg?crop=0.567xw:0.477xh;0.333xw,0.455xh&resize=2048:*" alt="Bentley">
+  </div>
+</section>
+
+<!-- 14 Koenigsegg -->
+<section id="koenigsegg" data-aos="fade-up">
+  <h2>Koenigsegg</h2>
+  <hr class="sep">
+  <a class="visit" href="https://www.koenigsegg.com" target="_blank">Visit Official Site</a>
+  <div class="car">
+    <img src="https://www.thesupercarblog.com/wp-content/uploads/2023/12/Koenigsegg-Jesko-Odin-delivery-3.jpg" alt="Koenigsegg">
+  </div>
+</section>
+
+<!-- 15 Pagani -->
+<section id="pagani" data-aos="fade-up">
+  <h2>Pagani</h2>
+  <hr class="sep">
+  <a class="visit" href="https://www.pagani.com" target="_blank">Visit Official Site</a>
+  <div class="car">
+    <img src="https://news.dupontregistry.com/wp-content/uploads/2025/05/Pagani-Huayra-Epitome_2-1140x570.jpg" alt="Pagani">
+  </div>
+</section>
+
+
+
+    <!-- ========== EXTRA 15 (web-sourced) ========== -->
+
+    <section id="audi" data-aos="fade-up">
+      <h2>Audi</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.audi.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://images.ctfassets.net/lym53uuylvg8/2pG85hL1BRR7i8gFlhvFGa/12083bfb2c01117031702f15b3d8e9b2/7_Of_The_Best_Audis_Sold_On_Collecting_Cars__1_.jpg" alt="Audi"></div>
+    </section>
+
+    <section id="lexus" data-aos="fade-up">
+      <h2>Lexus</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.lexus.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://www.moveelectric.com/sites/default/files/styles/article/public/2022-12/1%20KF4_Lexus%2520Electrified%2520Concept_05.jpg?itok=cIZLzgLF" alt="Lexus"></div>
+    </section>
+
+    <section id="maserati" data-aos="fade-up">
+      <h2>Maserati</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.maserati.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://www.cnet.com/a/img/resize/53b7f7b2ae1341abefcad712349e8ba6e901bbee/hub/2022/08/03/6490ff5f-de8d-484e-8a2f-aad4df427223/ogi1-2022-maserati-mc20-006.jpg?auto=webp&fit=crop&height=675&width=1200" alt="Maserati"></div>
+    </section>
+
+    <section id="jaguar" data-aos="fade-up">
+      <h2>Jaguar</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.jaguar.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://media.production.jlrms.com/styles/hero_crop/s3/2021-01-18/image/a45acb83-2700-46ac-8b8f-0e3ec25b741c/X152_REIMS_LE_STUDIO_FINAL_JPG_X152_21MY_146_GLHD_6_16-9.jpg?VersionId=YfX2mZ2Y7f9J1J6DZK2LtN4Ew33PvILr&h=c6498383&itok=nUwhDfn-" alt="Jaguar"></div>
+    </section>
+
+    <section id="cadillac" data-aos="fade-up">
+      <h2>Cadillac</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.cadillac.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://www.cadillac.com/content/dam/cadillac/na/us/english/ux/celestiq-mov/md-celestiq-overview-masthead-24.jpg" alt="Cadillac"></div>
+    </section>
+
+    <section id="genesis" data-aos="fade-up">
+      <h2>Genesis</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.genesis.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://images.cars.com/cldstatic/wp-content/uploads/genesis-g70--01-oem.jpg" alt="Genesis"></div>
+    </section>
+
+    <section id="infiniti" data-aos="fade-up">
+      <h2>Infiniti</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.infiniti.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://paultan.org/image/2018/10/2018-Infiniti-Project-Black-S-Paris-debut-9-1200x628.jpg" alt="Infiniti"></div>
+    </section>
+
+    <section id="alfaromeo" data-aos="fade-up">
+      <h2>Alfa Romeo</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.alfaromeo.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://www.motortrend.com/uploads/2022/11/2024-Alfa-Romeo-Giulia-10.jpeg?w=768&width=768&q=75&format=webp" alt="Alfa Romeo"></div>
+    </section>
+
+    <section id="lucid" data-aos="fade-up">
+      <h2>Lucid</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.lucidmotors.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://hagerty-media-prod.imgix.net/2023/08/2023-Lucid-Air-Sapphire-25-scaled.jpg?auto=format%2Ccompress&ixlib=php-3.3.0" alt="Lucid"></div>
+    </section>
+
+    <section id="rivian" data-aos="fade-up">
+      <h2>Rivian</h2>
+      <hr class="sep">
+      <a class="visit" href="https://rivian.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://www.industryleadersmagazine.com/wp-content/uploads/2022/07/Rivian-R1S-Review-1.jpg" alt="Rivian"></div>
+    </section>
+
+    <section id="tesla" data-aos="fade-up">
+      <h2>Tesla</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.tesla.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://d2q97jj8nilsnk.cloudfront.net/images/tesla-model-s-plaid-0-60-fastest-tesla.jpg" alt="Tesla"></div>
+    </section>
+
+    <section id="polestar" data-aos="fade-up">
+      <h2>Polestar</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.polestar.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://www.motortrend.com/uploads/sites/5/2019/11/2020-Polestar-1-10.jpg" alt="Polestar"></div>
+    </section>
+
+    <section id="volvo" data-aos="fade-up">
+      <h2>Volvo</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.volvocars.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://www.topgear.com/sites/default/files/2025/06/349041_Volvo_XC40_B4_Ultra.jpg?w=1784&h=1004" alt="Volvo"></div>
+    </section>
+
+    <section id="acura" data-aos="fade-up">
+      <h2>Acura</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.acura.com" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://dealerimages.dealereprocess.com/image/upload/3528312" alt="Acura"></div>
+    </section>
+
+    <section id="maybach" data-aos="fade-up">
+      <h2>Maybach</h2>
+      <hr class="sep">
+      <a class="visit" href="https://www.mercedes-benz.com/en/vehicles/mercedes-maybach/" target="_blank" rel="noopener">Visit Official Site</a>
+      <div class="car"><img loading="lazy" src="https://www.topgear.com/sites/default/files/images/news-article/carousel/2020/11/9e57369ebfc2c3e6348095465ba6a95f/20c0535_111.jpg?w=1784&h=1004" alt="Maybach"></div>
+    </section>
+
+  </main>
+
+  <footer>© 2025 Ultimate Luxury Supercar Showroom | Designed by Er. Ayush Sir</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({duration:1000});
+
+    const bgAudio = document.getElementById('bgAudio');
+    const audioControl = document.getElementById('audioControl');
+    const audioIcon = document.getElementById('audioIcon');
+    const volume = document.getElementById('volume');
+
+    bgAudio.volume = 0.5;
+
+    audioControl.addEventListener('click', async () => {
+      if (bgAudio.paused) {
+        try {
+          await bgAudio.play();
+          audioIcon.textContent = '🔇';
+        } catch (e) {
+          alert('Browser blocked autoplay. Click the audio control again.');
+        }
+      } else {
+        bgAudio.pause();
+        audioIcon.textContent = '🔊';
+      }
+    });
+
+    volume.addEventListener('input', () => { bgAudio.volume = volume.value; });
+
+    // highlight nav link while scrolling
+    const navLinks = document.querySelectorAll('nav a');
+    const sections = Array.from(document.querySelectorAll('main section'));
+    function onScroll(){
+      const pos = window.scrollY + 160;
+      let cur = '';
+      for (const s of sections) if (s.offsetTop <= pos) cur = s.id;
+      navLinks.forEach(a => a.style.opacity = (a.getAttribute('href') === '#'+cur) ? '1' : '0.88');
+    }
+    window.addEventListener('scroll', onScroll);
+    window.addEventListener('load', onScroll);
+  </script>
+</body>
+</html>
